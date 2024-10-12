@@ -1,0 +1,351 @@
+.mainContainer {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.leftContainer{
+    padding: 10px;
+    margin: auto;
+}
+.rightContainer {
+    padding: 10px;
+}
+
+.leftChild{
+    border: 1px solid #ccc;
+    text-align: justify;
+    display: flex;
+    overflow: hidden;
+    width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.rightChild {
+    /* border: 1px solid #ccc; */
+    text-align: justify;
+    width: 100%;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%; 
+    min-width: 456px; 
+    max-width: 500px; 
+    padding: 20px;
+    background-color: rgb(62,42,12);
+    color: rgb(103, 131, 131);
+    border-radius: 8px;
+    border: 2px solid red;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: auto; 
+}
+.cardContainerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.mainCard{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(62,42,12);
+    color: rgb(103, 131, 131);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mainCardRight {
+    width: 100%; 
+   height: auto;
+}
+.hikeContainer{
+    padding: 10px 10px;
+    border-radius: 6px;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    margin-left: auto;
+    background-color: #72BC00;
+}
+.profileContainer{
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profileImage{
+    width: 100px;
+    height: 140px;
+}
+.profileImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.content{
+    width: 80%;
+}
+.content h2{
+    margin: 0;
+    color: #E1A138;
+}
+.position{
+    margin: 0;
+    font-size: 16px;
+    color: #EEE8DE;
+}
+.desc{
+    margin: 0;
+    font-size: 14px;
+    line-height: 156%;
+    color: #A9A192;
+}
+.companyBtnContainer{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.companyImgage{
+    width: 80px;
+    height: 30px;
+    padding: 5px 5px;
+}
+.companyImgage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btnContanier{
+    height: auto;
+    width: 100px;
+}
+.btn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid gray;
+    outline: none;
+    background-color: black;
+}
+.btn p{
+    margin: 0;
+    width: 100%;
+    color: coral;
+}
+.youtubeImgage{
+    height: 30px;
+    width: auto;
+    background-color: black;
+}
+.youtubeImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: black;
+}
+
+.headerContainer{
+    width: 46%;
+    height: auto;
+}
+.headerContainer h2{
+    background: linear-gradient(90deg, #000 35.81%, #8f5600 68.68%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    margin: 0;
+}
+.discover{
+    width: 100%;
+    height: 30px;
+
+}
+.discover p{
+    margin: 0;
+    font-size: 16px;
+    color: #6c6c6c;
+    
+}
+.smallCardContainer{
+    display: flex;
+    flex-direction: row;
+    min-width: 400px;
+    max-width: 400px;
+    height: auto;
+    align-items: center;
+    justify-items: flex-start;
+
+}
+.iconleftDiv, .iconrightDiv{
+    width: 50px;
+    height: auto;
+    position: relative;
+
+}
+.iconleftDiv, .iconrightDiv svg{
+    font-size: 30px;
+}
+.cardsContainerDiv{
+    max-width: 540px; 
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+
+}
+
+
+.aniImages {
+    width: 70px;
+    height: auto;
+    flex-shrink: 0; 
+    transition: transform 0.3s ease-in-out;
+}
+.aniImg{
+    width: 100%;
+    height: 100%;
+}
+
+  .sliderTracks{
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+    gap: 3px;
+    
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+}
+.disabled {
+    display: none;  
+}
+
+
+
+.inactiveCard {
+    opacity: 0.6;  
+}
+
+.activeCard {
+    opacity: 1;   
+    border: 2px solid rgb(255, 251, 0);  
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 643px) {
+    .mainContainer {
+        grid-template-columns: 100%; 
+        place-items:center ;
+        align-items: center; 
+    justify-content: center;
+    }
+
+    .mainCard, 
+    .mainCardRight {
+        width: 100%; 
+        height: auto; 
+        padding: 0;
+    }
+    .iconleftDiv, .iconrightDiv{
+        display: none;
+    }
+    .headerContainer{
+        width: 100%;
+    }
+    .sliderTracks {
+        width: 100%; 
+        overflow: visible; 
+        
+    }
+    .aniImages {
+        width: 90px; 
+        height: auto;
+    }
+    .cardsContainerDiv{
+        max-width: 500px;
+        overflow: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    
+    }
+    .leftChild{
+        width: 368px;
+    }
+    .cardContainer{
+        padding: 5px 10px;
+        min-width: 344px;
+    }
+    .profileContainer{
+        gap: 7px;
+    }
+   .content h2{
+    font-size: 14px;
+   }
+   .position{
+    font-size: 12px;
+   }
+   .hikeContainer{
+    padding: 5px 5px;
+    font-size: 13px;
+   }
+   .desc{
+    font-size: 10px;
+    line-height: 145%;
+   }
+        
+   .profileImage{
+    height: 100px;
+   }
+   .companyImgage{
+    width: 70px;
+    height: 20px;
+   }
+   .btnContanier{
+    width: 80px;
+   }
+   .btn p{
+    font-size: 9px;
+   }
+   .youtubeImgage{
+    height: 20px;
+   }
+   .rightContainer{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+   }
+   .headerContainer h2{
+    font-size: 26px;
+   }
+}
